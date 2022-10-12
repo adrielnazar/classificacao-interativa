@@ -7,50 +7,51 @@ let botao5 = document.getElementById('estrela5')
 
 
 function apagar() {
-    botao1.style.background = '#7c879818'
-    botao1.style.color = '#7c8798'
-    botao2.style.background = '#7c879818'
-    botao2.style.color = '#7c8798'
-    botao3.style.background = '#7c879818'
-    botao3.style.color = '#7c8798'
-    botao4.style.background = '#7c879818'
-    botao4.style.color = '#7c8798'
-    botao5.style.background = '#7c879818'
-    botao5.style.color = '#7c8798'
+    botao1.classList.remove("selecionado")
+    botao1.classList.add("selecionar")
+    botao2.classList.remove("selecionado")
+    botao2.classList.add("selecionar")
+    botao3.classList.remove("selecionado")
+    botao3.classList.add("selecionar")
+    botao4.classList.remove("selecionado")
+    botao4.classList.add("selecionar")
+    botao5.classList.remove("selecionado")
+    botao5.classList.add("selecionar")
 }
 
 function estrela1() {
     apagar()
-    botao1.style.background = 'orange'
-    botao1.style.color = 'white'
+    botao1.classList.add("selecionado")
+    botao1.classList.remove("selecionar")
     estrelas = 1
 }
 
 function estrela2() {
     apagar()
-    botao2.style.background = 'orange'
-    botao2.style.color = 'white'
+    botao2.classList.add("selecionado")
+    botao2.classList.remove("selecionar")
     estrelas = 2
 }
 
 function estrela3() {
     apagar()
-    botao3.style.background = 'orange'
-    botao3.style.color = 'white'
+    botao3.classList.add("selecionado")
+    botao3.classList.remove("selecionar")
     estrelas = 3
 }
 
 function estrela4() {
     apagar()
-    botao4.style.background = 'orange'
-    botao4.style.color = 'white'
+    botao4.classList.add("selecionado")
+    botao4.classList.remove("selecionar")
+    
     estrelas = 4
 }
 
 function estrela5() {
     apagar()
-    botao5.style.background = 'orange'
-    botao5.style.color = 'white'
+    botao5.classList.add("selecionado")
+    botao5.classList.remove("selecionar")
     estrelas = 5
 }
 

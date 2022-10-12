@@ -22,6 +22,7 @@ main {
     border-radius: 25px;
     transform: translate(-50%, -50%);
 }
+
 section {
     padding: 30px;
 }
@@ -45,12 +46,15 @@ p, div ,input {
     margin-bottom: 15px;
 }
 
-input, div.botao {
+input, div.botao , div.resposta {
     background-color: #7c879818;
     border-radius: 50%;
 }
 
 div.botao {
+    background-image: url(../images/icon-star.svg)  ;
+    background-repeat: no-repeat;
+    background-position: 52%;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -66,8 +70,13 @@ input {
     cursor: pointer;
 }
 
-input:hover {
+input.selecionar:hover {
     background-color: rgba(255, 255, 255, 0.219);
+    color: white;
+}
+
+.selecionado {
+    background-color: hsl(25, 97%, 53%);
     color: white;
 }
 
@@ -86,15 +95,8 @@ input#Enviar:hover {
     color: hsl(25, 97%, 53%);
 }
 
-div > p, div > img {
-    transform: translate(0px, 4px);
-}
-
 section#resultado {
     display: none;
-}
-
-section#resultado {
     text-align: center;
 }
 
@@ -103,9 +105,11 @@ section#resultado > img {
 }
 
 section#resultado > div {
-    width: 170px;
+    width: 180px;
+    height: 23px;
     margin: auto;
     padding: 10px 0px 5px;
     border-radius: 50px;
     color: hsl(25, 97%, 53%);
 }
+
