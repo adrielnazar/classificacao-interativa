@@ -12,7 +12,6 @@ body {
 }
 
 main {
-    display: block;
     background-image: linear-gradient(to bottom, #23272e, #14171c);
     position: absolute;
     width: 418px;
@@ -46,13 +45,13 @@ p, div ,input {
     margin-bottom: 15px;
 }
 
-input, div.botao , div.resposta {
+input, div.estrela , div.resposta {
     background-color: #7c879818;
     border-radius: 50%;
 }
 
-div.botao {
-    background-image: url(../images/icon-star.svg)  ;
+div.estrela {
+    background-image: url(../images/icon-star.svg);
     background-repeat: no-repeat;
     background-position: 52%;
     width: 25px;
