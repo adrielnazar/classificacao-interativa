@@ -1,57 +1,53 @@
 let estrelas = 0
-let botao1 = document.getElementById('estrela1')
-let botao2 = document.getElementById('estrela2')
-let botao3 = document.getElementById('estrela3')
-let botao4 = document.getElementById('estrela4')
-let botao5 = document.getElementById('estrela5')
+let botao = []
+botao[0] = document.getElementById('estrela1')
+botao[1] = document.getElementById('estrela2')
+botao[2] = document.getElementById('estrela3')
+botao[3] = document.getElementById('estrela4')
+botao[4] = document.getElementById('estrela5')
 
 
 function apagar() {
-    botao1.classList.remove("selecionado")
-    botao1.classList.add("selecionar")
-    botao2.classList.remove("selecionado")
-    botao2.classList.add("selecionar")
-    botao3.classList.remove("selecionado")
-    botao3.classList.add("selecionar")
-    botao4.classList.remove("selecionado")
-    botao4.classList.add("selecionar")
-    botao5.classList.remove("selecionado")
-    botao5.classList.add("selecionar")
+    for (let n = 0; n < botao.length; n++) {
+        botao[n].classList.remove("selecionado")
+        botao[n].classList.add("selecionar")
+        
+    }
 }
 
 function estrela1() {
     apagar()
-    botao1.classList.add("selecionado")
-    botao1.classList.remove("selecionar")
+    botao[0].classList.add("selecionado")
+    botao[0].classList.remove("selecionar")
     estrelas = 1
 }
 
 function estrela2() {
     apagar()
-    botao2.classList.add("selecionado")
-    botao2.classList.remove("selecionar")
+    botao[1].classList.add("selecionado")
+    botao[1].classList.remove("selecionar")
     estrelas = 2
 }
 
 function estrela3() {
     apagar()
-    botao3.classList.add("selecionado")
-    botao3.classList.remove("selecionar")
+    botao[2].classList.add("selecionado")
+    botao[2].classList.remove("selecionar")
     estrelas = 3
 }
 
 function estrela4() {
     apagar()
-    botao4.classList.add("selecionado")
-    botao4.classList.remove("selecionar")
+    botao[3].classList.add("selecionado")
+    botao[3].classList.remove("selecionar")
     
     estrelas = 4
 }
 
 function estrela5() {
     apagar()
-    botao5.classList.add("selecionado")
-    botao5.classList.remove("selecionar")
+    botao[4].classList.add("selecionado")
+    botao[4].classList.remove("selecionar")
     estrelas = 5
 }
 
