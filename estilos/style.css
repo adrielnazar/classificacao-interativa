@@ -112,3 +112,32 @@ section#resultado > div {
     color: hsl(25, 97%, 53%);
 }
 
+@media screen and (max-width: 375px) {
+
+    main {
+        position: relative;
+        width: 375px;
+        margin: auto;
+        margin-top: 10vh;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    input#Enviar{
+        width: 100%;
+    }
+
+    input {
+        margin-right: 3%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    div.attribution {
+        width: 360px;
+    }
+    
+}
